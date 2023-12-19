@@ -32,8 +32,8 @@ const buatInst = async (cID) => {
     const client = new Client({
         puppeteer: {
             headless: true,
-            args: ['--no-sandbox', '--disable-setuid-sandbox'],
-        },
+            args: ['--no-sandbox','--disable-setuid-sandbox']
+          },
         authStrategy: new RemoteAuth({
             clientId: cID,
             backupSyncIntervalMs: 60000,
